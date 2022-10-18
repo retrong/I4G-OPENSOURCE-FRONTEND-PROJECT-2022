@@ -8,12 +8,14 @@ import DashboardPage from "./pages/DashboardPage";
 import Kyc from "./pages/Kyc";
 import EmailVerify from "./pages/EmailVerify";
 import Home from "./pages/Home";
+import ViewProducts from './components/molecules/Products';
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import EmptyMessagePage from "./pages/EmptyMessagePage"
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -23,6 +25,7 @@ function Routes() {
       <Route path="/products" element={<AddNewProductPage1 />} />
       <Route path="/login" element={<Login />} />
       <Route path="/create-account" element={<CreateAccount />} />
+      <Route path="/view-products" element={<><ViewProducts/></>}/>
       <Route path="/email-verification" element={<EmailVerify />} />
       <Route path="/phone-verification" element={<PhoneNumberVerification/>} />
 
